@@ -1,28 +1,37 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <dv-full-screen-container>
+      <div style="height:10%;">
+        <TitleVue/>
+      </div>
+      <div style="height:85%;">
+        <BodyMainVue/>
+      </div>
+    </dv-full-screen-container>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import TitleVue from "./components/Title.vue"
+import BodyMainVue from "./components/BodyMain.vue"
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components:{
+    TitleVue,
+    BodyMainVue
   }
 }
 </script>
 
 <style>
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(40, 42, 54);
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 </style>
