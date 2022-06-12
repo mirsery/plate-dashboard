@@ -9,12 +9,22 @@
   },
   "dependencies": {
     "@jiaminghi/data-view": "^2.10.0",
+    "@sicons/material": "^0.12.0",
     "core-js": "^3.8.3",
     "vue": "^2.6.14"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
     "@babel/eslint-parser": "^7.12.16",
+    "@v2icons/antd": "^0.12.0",
+    "@v2icons/carbon": "^0.12.0",
+    "@v2icons/fa": "^0.12.0",
+    "@v2icons/fluent": "^0.12.0",
+    "@v2icons/ionicons4": "^0.12.0",
+    "@v2icons/ionicons5": "^0.12.0",
+    "@v2icons/material": "^0.12.0",
+    "@v2icons/tabler": "^0.12.0",
+    "@v2icons/utils": "^0.1.4",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "vue-template-compiler": "^2.6.14"

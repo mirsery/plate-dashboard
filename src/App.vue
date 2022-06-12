@@ -1,11 +1,20 @@
 <template>
-  <div id="app">
+  <div>
     <dv-full-screen-container>
-      <div style="height:10%;">
-        <TitleVue/>
-      </div>
-      <div style="height:85%;">
-        <BodyMainVue/>
+      <div id="app">
+        <div style="height:5%;width: 100%">
+          <TitleVue/>
+        </div>
+        <div style="height:15%;width: 100%">
+         <BodyTitle/>
+        </div>
+        <div style="height:50%;width: 100%">
+          <BodyContent/>
+        </div>
+        <div style="height:25%;width: 100%">
+          <BodyTail/>
+        </div>
+
       </div>
     </dv-full-screen-container>
   </div>
@@ -13,12 +22,17 @@
 
 <script>
 import TitleVue from "./components/Title.vue"
-import BodyMainVue from "./components/BodyMain.vue"
+import BodyTitle from "@/components/BodyTitle";
+import BodyContent from "@/components/BodyContent";
+import BodyTail from "@/components/BodyTail";
+
 export default {
   name: 'App',
-  components:{
+  components: {
+    BodyTail,
+    BodyContent,
+    BodyTitle,
     TitleVue,
-    BodyMainVue
   }
 }
 </script>
@@ -27,11 +41,11 @@ export default {
 #app {
   height: 100vh;
   width: 100vw;
-  background-color: rgb(40, 42, 54);
+  background-color: rgb(21, 24, 73);
   display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
 }
 </style>
