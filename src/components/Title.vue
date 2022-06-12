@@ -53,7 +53,7 @@ export default {
     date(){
       let date = new Date();
       let yy = date.getFullYear();
-      let mm = this.commonFormat(date.getMonth());
+      let mm = this.commonFormat(date.getMonth() + 1);
       let dd = this.commonFormat(date.getDate());
       return  yy + "-" + mm + "-" + dd;
     },
