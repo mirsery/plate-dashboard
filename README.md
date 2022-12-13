@@ -1,4 +1,8 @@
-# plate-track
+# 车辆大数据大屏
+
+## 项目运行截图
+
+![img.png](img.png)
 
 ## Project setup
 ```
@@ -19,6 +23,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
